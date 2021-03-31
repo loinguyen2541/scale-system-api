@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\buido\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\buido\\.nuget\\packages"
+    ]
+  }
+}
