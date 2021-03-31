@@ -14,7 +14,7 @@ namespace ImportExportManagementAPI_scale.Models
         public int GoodsId { get; set; }
         public int PartnerId { get; set; }
 
-        public virtual Good Goods { get; set; }
+        public virtual Goods Goods { get; set; }
         public virtual Inventory Inventory { get; set; }
         public virtual Partner Partner { get; set; }
     }

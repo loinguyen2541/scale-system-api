@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace ImportExportManagementAPI_scale.Models
 {
-    public partial class Good
+    public partial class Goods
     {
-        public Good()
+        public Goods()
         {
             InventoryDetails = new HashSet<InventoryDetail>();
             Schedules = new HashSet<Schedule>();

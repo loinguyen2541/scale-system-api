@@ -30,7 +30,7 @@ namespace ImportExportManagementAPI_scale
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ImportExportManagementAPI_scale", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ImportExportManagementAPI-scale", Version = "v1" });
             });
         }
 
@@ -41,7 +41,10 @@ namespace ImportExportManagementAPI_scale
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ImportExportManagementAPI_scale v1"));
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "ImportExportManagementAPI-scale v1");
+                });
             }
 
             app.UseHttpsRedirection();

@@ -19,7 +19,7 @@ namespace ImportExportManagementAPI_scale.Models
         public int GoodsId { get; set; }
         public int TimeTemplateItemId { get; set; }
 
-        public virtual Good Goods { get; set; }
+        public virtual Goods Goods { get; set; }
         public virtual Partner Partner { get; set; }
         public virtual TimeTemplateItem TimeTemplateItem { get; set; }
     }

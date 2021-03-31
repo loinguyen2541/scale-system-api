@@ -1,10 +1,11 @@
 ﻿using System;
+using ImportExportManagementAPI_scale.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace ImportExportManagementAPI_scale.Models
+namespace ImportExportManagementAPI_scale.DBContext
 {
     public partial class IEManagementContext : DbContext
     {
@@ -18,7 +19,7 @@ namespace ImportExportManagementAPI_scale.Models
         }
 
         public virtual DbSet<Account> Accounts { get; set; }
-        public virtual DbSet<Good> Goods { get; set; }
+        public virtual DbSet<Goods> Goods { get; set; }
         public virtual DbSet<IdentityCard> IdentityCards { get; set; }
         public virtual DbSet<Inventory> Inventories { get; set; }
         public virtual DbSet<InventoryDetail> InventoryDetails { get; set; }
@@ -61,7 +62,7 @@ namespace ImportExportManagementAPI_scale.Models
                     .HasForeignKey(d => d.RoleId);
             });
 
-            modelBuilder.Entity<Good>(entity =>
+            modelBuilder.Entity<Goods>(entity =>
             {
                 entity.HasKey(e => e.GoodsId);
 
